@@ -90,7 +90,7 @@ class polynomial{
             return sum;
         }
         double delta() {
-            if(degree == 2) pow(coefficients[1],2) - 4*coefficients[2]*coefficients[0];
+            if(degree == 2) return pow(coefficients[1],2) - 4*coefficients[2]*coefficients[0];
             return 0;
         }
         double xv() {
@@ -103,10 +103,12 @@ class polynomial{
         }
         vector<double> roots() {
             vector<double> r;
-            if(delta()>=0) {
-            r.push_back((-1)*(coefficients[1]+sqrt(delta()))/((2*coefficients[2])));
-            r.push_back((-1)*(coefficients[1]-sqrt(delta()))/((2*coefficients[2])));
-            return r;
+            if(degree == 2) {
+                if(delta()>=0) {
+                    r.push_back((-1)*(coefficients[1]+sqrt(delta()))/((2*coefficients[2])));
+                    r.push_back((-1)*(coefficients[1]-sqrt(delta()))/((2*coefficients[2])));
+                    return r;
+                }
             }
             return r={};            
         }
