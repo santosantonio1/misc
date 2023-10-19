@@ -6,7 +6,7 @@
      5  6  7 12 23
     16 14 13 11 22
     17 18 19 20 21 
-    Notice the main diagonal belongs to a arithmetic sequene of 
+    Notice the main diagonal belongs to an arithmetic sequene of 
     Second Order(ratio 2). Then An = 1 + n*(n-1).
     n is the "cycle" where An belongs -> n = max(x,y).
     We start at An then if y>x we must move left. If y<x we move up
