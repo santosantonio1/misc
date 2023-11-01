@@ -2,7 +2,7 @@
     maze.cpp
     @Antonio dos Santos
     Maze solver
-    OBS: The path found is not necessarily the shortest
+    OBS: The path found is the shortest
 */
 #include <iostream>
 #include <stack>
